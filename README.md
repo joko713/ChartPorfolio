@@ -1,2 +1,2 @@
-# ChartPorfolio
-Dash board reporting ideation
+# ChartPortfolio
+Dashboard reporting ideation
