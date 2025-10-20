@@ -273,5 +273,150 @@
             });
         }
     </script>
+
+           <div class="section">
+            <h2 class="section-title">💚 예원 추천 라인</h2>
+            <div class="color-grid">
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: #D8F999;">
+                        <button class="copy-btn" onclick="copyColor('#D8F999')">복사</button>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">라이트 그린</div>
+                        <div class="color-code">#D8F999</div>
+                        <div class="color-usage">밝은 강조·성공 메시지</div>
+                    </div>
+                </div>
+                
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: #ECFCCA;">
+                        <button class="copy-btn" onclick="copyColor('#ECFCCA')">복사</button>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">페일 옐로우 그린</div>
+                        <div class="color-code">#ECFCCA</div>
+                        <div class="color-usage">부드러운 배경·하이라이트</div>
+                    </div>
+                </div>
+                
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: #B9F8CF;">
+                        <button class="copy-btn" onclick="copyColor('#B9F8CF')">복사</button>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">민트 그린</div>
+                        <div class="color-code">#B9F8CF</div>
+                        <div class="color-usage">성공·완료·긍정</div>
+                    </div>
+                </div>
+                
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: #B8E6FE;">
+                        <button class="copy-btn" onclick="copyColor('#B8E6FE')">복사</button>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">스카이 블루</div>
+                        <div class="color-code">#B8E6FE</div>
+                        <div class="color-usage">정보·알림·링크</div>
+                    </div>
+                </div>
+                
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: #DFF2FE;">
+                        <button class="copy-btn" onclick="copyColor('#DFF2FE')">복사</button>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">아이스 블루</div>
+                        <div class="color-code">#DFF2FE</div>
+                        <div class="color-usage">배경·카드·섹션</div>
+                    </div>
+                </div>
+                
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: #DBEAFE;">
+                        <button class="copy-btn" onclick="copyColor('#DBEAFE')">복사</button>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">라이트 블루</div>
+                        <div class="color-code">#DBEAFE</div>
+                        <div class="color-usage">인포 배경·툴팁</div>
+                    </div>
+                </div>
+                
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: #2B7FFF;">
+                        <button class="copy-btn" onclick="copyColor('#2B7FFF')">복사</button>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">브라이트 블루</div>
+                        <div class="color-code">#2B7FFF</div>
+                        <div class="color-usage">프라이머리·액션 버튼</div>
+                    </div>
+                </div>
+                
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: #A3B3FF;">
+                        <button class="copy-btn" onclick="copyColor('#A3B3FF')">복사</button>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">페리윙클</div>
+                        <div class="color-code">#A3B3FF</div>
+                        <div class="color-usage">서브 강조·배지</div>
+                    </div>
+                </div>
+                
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: #E0E7FF;">
+                        <button class="copy-btn" onclick="copyColor('#E0E7FF')">복사</button>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">라벤더 블루</div>
+                        <div class="color-code">#E0E7FF</div>
+                        <div class="color-usage">배경·호버 상태</div>
+                    </div>
+                </div>
+                
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: #DDD6FF;">
+                        <button class="copy-btn" onclick="copyColor('#DDD6FF')">복사</button>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">페일 퍼플</div>
+                        <div class="color-code">#DDD6FF</div>
+                        <div class="color-usage">부드러운 강조·배경</div>
+                    </div>
+                </div>
+                
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: #CAD5E2;">
+                        <button class="copy-btn" onclick="copyColor('#CAD5E2')">복사</button>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">실버 블루</div>
+                        <div class="color-code">#CAD5E2</div>
+                        <div class="color-usage">중립·디바이더·테두리</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function copyColor(color) {
+            navigator.clipboard.writeText(color).then(() => {
+                const btn = event.target;
+                const originalText = btn.textContent;
+                btn.textContent = '복사됨!';
+                btn.style.background = '#A8B5C2';
+                btn.style.color = 'white';
+                
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                    btn.style.background = '';
+                    btn.style.color = '';
+                }, 1500);
+            });
+        }
+    </script>
 </body>
 </html>
